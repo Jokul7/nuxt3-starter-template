@@ -1,0 +1,44 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev --open",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.4.6",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.34.0",
+    "@iconify-json/twemoji": "^1.1.7",
+    "@iconify/utils": "^2.0.4",
+    "@unocss/nuxt": "^0.47.6",
+    "@vueuse/core": "^9.6.0",
+    "@vueuse/nuxt": "^9.6.0",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "nuxt": "3.0.0",
+    "sass": "^1.56.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
