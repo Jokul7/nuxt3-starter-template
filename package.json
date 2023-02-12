@@ -22,23 +22,20 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.6",
-    "normalize.css": "^8.0.1"
+    "pinia": "^2.0.30"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.34.0",
-    "@iconify-json/twemoji": "^1.1.7",
-    "@iconify/utils": "^2.0.4",
-    "@unocss/nuxt": "^0.47.6",
-    "@vueuse/core": "^9.6.0",
-    "@vueuse/nuxt": "^9.6.0",
-    "eslint": "^8.29.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
-    "nuxt": "3.0.0",
-    "sass": "^1.56.2"
+    "@antfu/eslint-config": "^0.35.2",
+    "@nuxtjs/tailwindcss": "^6.4.0",
+    "@vueuse/core": "^9.12.0",
+    "@vueuse/nuxt": "^9.12.0",
+    "eslint": "^8.34.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.1",
+    "nuxt": "^3.2.0",
+    "sass": "^1.58.0"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ]
+  "overrides": {
+    "vue": "latest"
+  }
 }
