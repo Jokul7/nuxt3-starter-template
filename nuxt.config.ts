@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
   ],
+  css: [
+    '@/assets/styles/reset.css',
+  ],
   postcss: {
     plugins: {
       autoprefixer: {
