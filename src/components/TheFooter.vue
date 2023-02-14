@@ -2,13 +2,13 @@
 </script>
 
 <template>
-  <div class="footer flex align-center justify-center mx-auto mt-36">
-    <div>It's footer</div>
-  </div>
+  <footer class="pt-14 pb-8">
+    <div class="w-main mx-auto text-center">
+      Footer
+    </div>
+  </footer>
 </template>
 
-<style scoped>
-.footer{
-  width: 1080px;
-}
+<style scoped lang="scss">
+
 </style>

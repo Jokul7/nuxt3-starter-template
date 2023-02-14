@@ -1,30 +1,28 @@
 <script setup lang="ts">
-const mode = useColorMode()
-const setMode = () => {
-  mode.value = mode.value === 'dark' ? 'light' : 'dark'
-}
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 </script>
 
 <template>
-  <div class="header flex items-center justify-between">
+  <div class="w-main mx-auto my-5 flex items-center justify-between">
     <NuxtLink to="/">
-      <div class="i-custom:vue text-3xl" />
+      LOGO
     </NuxtLink>
     <div class="flex items-center">
-      <ul class="flex list-none text-white">
-        <li class="ml">
+      <ul class="flex list-none">
+        <li class="mr-4">
           <NuxtLink to="/">
             Home
           </NuxtLink>
         </li>
-        <li class="ml">
+        <li class="mr-4">
           <NuxtLink to="/about">
             About
           </NuxtLink>
         </li>
       </ul>
-      <button class="ml cursor-pointer" @click="setMode">
-        Mode {{ mode }}
+      <button class="ml cursor-pointer" @click="toggleDark()">
+        Is Dark: {{ isDark }}
       </button>
     </div>
   </div>
@@ -33,14 +31,5 @@ const setMode = () => {
 <style lang="scss" scoped>
 .router-link-exact-active{
   color: #00c58e;
-}
-.header{
-  width: 1080px;
-  height: 36px;
-  margin: 24px auto;
-}
-.logo{
-  width: 132px;
-  height: 32px;
 }
 </style>
